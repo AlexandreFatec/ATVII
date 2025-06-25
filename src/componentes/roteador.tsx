@@ -1,6 +1,7 @@
 import { Component } from "react";
 import BarraNavegacao from "./barraNavegacao";
-import FormularioCadastroCliente from "./cadastro/formularioCadastroCliente";
+import Cadastro from "../componentes/cadastro/cadastro";
+
 import ListaCliente from "./clientes/listaCliente";
 
 type state = {
@@ -45,7 +46,7 @@ export default class Roteador extends Component<{}, state> {
                 return (
                     <>
                         {barraNavegacao}
-                        <FormularioCadastroCliente tema="purple lighten-4" />
+                        <Cadastro tema="purple lighten-4" />
                     </>
                 )
             case 'Produtos':
